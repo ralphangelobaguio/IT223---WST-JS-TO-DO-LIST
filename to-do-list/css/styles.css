@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Secular One', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(rgb(41, 41, 81), rgb(2, 4, 16));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  background-color: rgb(41, 41, 81);
+  padding: 12px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 1px solid white;
+}
+
+#add-task-container {
+  width: 400px;
+  padding: 20px 10px;
+  background: white;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+input {
+  flex: 4;
+  margin-right: 10px;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+#add-task {
+  flex: 1;
+  font-size: 1rem;
+  padding: 7px;
+  background-color: rgb(41, 41, 81);
+  color: white;
+  border: 1px solid rgb(41, 41, 81);
+  transition: .5s;
+  cursor: pointer;
+}
+
+#add-task:hover {
+  background-color: rgb(14, 24, 63);
+  color: white;
+}
+
+/* Styling for adding the to-do-list */
+
+.task-container {
+  width: 100%;
+}
+
+.task {
+  width: 97%;
+  font-size: 1rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  margin-bottom: 1px;
+}
+
+.task li {
+  padding: 5px;
+  list-style: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+  flex: 4;
+  margin: 5px;
+}
+
+.task button {
+  flex: 1;
+  background-color: white;
+  cursor: pointer;
+}
+
+.task .doneTask {
+  background-color: rgb(38, 38, 165);
+  color: white;
+  border: none;
+  margin-right: 5px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  transition: 0.5s;
+}
+
+.task .doneTask:hover {
+  background-color: rgb(10, 10, 100);
+}
+
+
+.task .deleteTask {
+  background-color: rgb(200, 36, 36);
+  color: white;
+  border: none;
+  margin-right: 5px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  transition: 0.5s;
+}
+
+.task .deleteTask:hover {
+  background-color: rgb(158, 18, 18);
+}
